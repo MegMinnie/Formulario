@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Sistema de gestão acadêmica</title>
+  </head>
+  <body>
+    <h3>SISTEMA DE GESTÃO ACADÊMICA</h3>
+
+    <form action="login.php" method="post">
+      <h4>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h4>
+
+      <label>
+        Login
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Senha
+        <input type="password" name="senha" />
+      </label>
+
+      <div class="status">
+        <label>Status</label>
+        <select name="assunto" id="">
+          <option value="1">Ativo</option>
+          <option value="2">Inativo</option>
+        </select>
+      </div>
+      <div>
+        <label> Tipo </label>
+        <input type="radio" name="tipo" value="tec" />
+        <label>Técnico</label>
+
+        <input type="radio" name="tipo" value="prof" />
+        <label> Professor </label>
+
+        <input type="radio" name="tipo" value="Aln" />
+        <label> Aluno </label>
+      </div>
+      <label>
+        Data de criação
+        <input type="date" name="data" />
+      </label>
+
+      <div>
+        <label> Perfil </label>
+
+        <input type="radio" name="tipo" value="con" />
+        <label>Convidado </label>
+
+        <input type="radio" name="tipo" value="adm" />
+        <label>Administrador </label>
+      </div>
+      <div class="textarea-div">
+        <label> Observações</label>
+        <textarea name="obs" rows="4" cols="50"></textarea>
+      </div>
+      <div class="wrap">
+        <label>Módulos</label>
+        <input type="checkbox" name="compras" />
+        <label>Compras</label>
+
+        <input type="checkbox" name="bt" />
+        <label>Biblioteca</label>
+
+        <input type="checkbox" name="acm" />
+        <label>Acadêmico</label>
+
+        <input id="forc" type="checkbox" name="doc" />
+        <label>Documentação</label>
+
+        <input id="forc" type="checkbox" name="RH" />
+        <label>Recursos Humanos</label>
+      </div>
+      <div class="Botão">
+        <input class="button" type="submit" value="Cadastrar" />
+
+        <input class="button" type="reset" value="Excluir" />
+      </div>
+    </form>
+  </body>
+</html>

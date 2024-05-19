@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #a7b0ff;
+}
+
+h3 {
+  font-size: medium;
+  background-color: #00002f;
+  color: white;
+  padding: 10px;
+  margin-left: 260px;
+  margin-right: 260px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+input[type="text, date, radio, email"],
+select,
+textarea {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+input[type="checkbox"] {
+  margin-left: 95px;
+  margin-bottom: 1rem;
+  align-content: center;
+}
+
+#forc {
+  flex-direction: row;
+  align-content: center;
+}
+
+input[type="password"] {
+  margin-left: 106px;
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  margin-left: 126px;
+  margin-bottom: 1rem;
+}
+
+input[type="email"] {
+  margin-left: 110px;
+  margin-bottom: 1rem;
+}
+
+input[type="date"] {
+  margin-left: 35px;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  margin-left: 65px;
+  margin-bottom: 1rem;
+}
+select {
+  margin-left: 113px;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+  margin-right: 260px;
+  height: 105svh;
+  gap: 15px;
+  background-color: aliceblue;
+  padding: 50px;
+}
+
+.Botão {
+  padding-top: 15px;
+  align-items: end;
+  text-align: end;
+  padding: 10px;
+  margin-right: 50;
+}
+
+.button {
+  border-radius: 5px;
+  border: solid 1.5px black;
+  background-color: #00002f;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 70px;
+  height: 25px;
+  align-items: center;
+}
+
+.status {
+  width: 9999px;
+  display: flex !important;
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.textarea-div {
+  display: flex !important;
+  flex-direction: row;
+}
