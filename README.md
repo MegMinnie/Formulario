@@ -1,2 +1,2 @@
 # Formulario
-Formulário sobre sistema de gestão acadêmica
+Cadastro de um usuário  em um sistema interno da faculdade
