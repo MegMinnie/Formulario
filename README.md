@@ -12,11 +12,8 @@
 <div align="left">
   
   ## Como Acessar a Aplicação
-<p>Acesse a aplicação por meio do link: <a href="https:https://megminnie.github.io/Formulario/
-"_blank">clique aqui</a></p>
+<p>Acesse a aplicação por meio do link: <a href="megminnie.github.io/Formulario/"_blank">clique aqui</a></p>
 
 ## *Screenshots*
-
-### Mostrar senha
-  ![Mostrar senha](img/mostrar-senha.png)
+  ![Tela](assets/form.png)
 </div>
