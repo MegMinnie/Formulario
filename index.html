@@ -7,79 +7,101 @@
     <title>Sistema de gestão acadêmica</title>
   </head>
   <body>
-    <h3>SISTEMA DE GESTÃO ACADÊMICA</h3>
+    <main>
+      <h3 class="titulo">SISTEMA DE GESTÃO ACADÊMICA</h3>
 
-    <form action="login.php" method="post">
-      <h4>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h4>
+      <form action="login.php" method="post">
+        <h4 class="titulo">MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h4>
 
-      <label>
-        Login
-        <input type="email" name="email" />
-      </label>
+        <div class="input-texto">
+          <label> Login:</label>
+          <input
+            class="inp"
+            type="email"
+            name="email"
+            placeholder="exemplo123@gmail.com"
+          />
+        </div>
+        <div class="input-texto">
+          <label> Senha:</label>
+          <input class="inp" type="password" name="senha" />
+        </div>
 
-      <label>
-        Senha
-        <input type="password" name="senha" />
-      </label>
+        <div class="status">
+          <label>Status:</label>
+          <select name="assunto" id="">
+            <option value="1">Ativo</option>
+            <option value="2">Inativo</option>
+          </select>
+        </div>
+        <div class="opcoes">
+          <label> Tipo: </label>
+          <div class="input-radio">
+            <input type="radio" name="tipo" value="tec" />
+            <label>Técnico</label>
+          </div>
+          <div class="input-radio">
+            <input type="radio" name="tipo" value="tec" />
+            <label>Professor</label>
+          </div>
 
-      <div class="status">
-        <label>Status</label>
-        <select name="assunto" id="">
-          <option value="1">Ativo</option>
-          <option value="2">Inativo</option>
-        </select>
-      </div>
-      <div>
-        <label> Tipo </label>
-        <input type="radio" name="tipo" value="tec" />
-        <label>Técnico</label>
+          <div class="input-radio">
+            <input type="radio" name="tipo" value="tec" />
+            <label>Aluno</label>
+          </div>
+        </div>
+        <div class="input-texto">
+          <label> Data de criação: </label>
+          <input type="date" name="data" />
+        </div>
 
-        <input type="radio" name="tipo" value="prof" />
-        <label> Professor </label>
+        <div class="opcoes">
+          <label> Perfil: </label>
 
-        <input type="radio" name="tipo" value="Aln" />
-        <label> Aluno </label>
-      </div>
-      <label>
-        Data de criação
-        <input type="date" name="data" />
-      </label>
+          <div class="input-radio">
+            <input type="radio" name="tipo" value="tec" />
+            <label>Convidado</label>
+          </div>
 
-      <div>
-        <label> Perfil </label>
+          <div class="input-radio">
+            <input type="radio" name="tipo" value="tec" />
+            <label>Administrador</label>
+          </div>
+        </div>
 
-        <input type="radio" name="tipo" value="con" />
-        <label>Convidado </label>
+        <div class="textarea">
+          <label> Observações:</label>
+          <textarea class="text" name="obs" rows="4" cols="30"></textarea>
+        </div>
+        <p>Módulos:</p>
+        <div class="check">
+          <div class="checkbox">
+            <input type="checkbox" id="compras1" />
+            <label for="compras1">Compras</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="compras2" />
+            <label for="compras2">Acadêmico</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="compras3" />
+            <label for="compras3">Biblioteca</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="compras4" />
+            <label for="compras4">Documentação</label>
+          </div>
+        </div>
 
-        <input type="radio" name="tipo" value="adm" />
-        <label>Administrador </label>
-      </div>
-      <div class="textarea-div">
-        <label> Observações</label>
-        <textarea name="obs" rows="4" cols="50"></textarea>
-      </div>
-      <div class="wrap">
-        <label>Módulos</label>
-        <input type="checkbox" name="compras" />
-        <label>Compras</label>
+        <div class="botao">
+          <input class="button" type="submit" value="Cadastrar" />
 
-        <input type="checkbox" name="bt" />
-        <label>Biblioteca</label>
-
-        <input type="checkbox" name="acm" />
-        <label>Acadêmico</label>
-
-        <input id="forc" type="checkbox" name="doc" />
-        <label>Documentação</label>
-
-        <input id="forc" type="checkbox" name="RH" />
-        <label>Recursos Humanos</label>
-      </div>
-      <div class="Botão">
-        <input class="button" type="submit" value="Cadastrar" />
-
-        <input class="button" type="reset" value="Excluir" />
-      </div>
-    </form>
+          <input class="button" type="reset" value="Excluir" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Desenvolvido por Mirele Oliveira da Silva &copy; 2024.</p>
+    </footer>
   </body>
 </html>
